@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/dist/style.css">
+  <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon">
+  <title>Franklin Onyenechere | Full-Stack Developer Portfolio</title>
+</head>
+<body class="font-bodyText ">
+  <header class="container flex justify-between items-center font-headings font-bold py-3">
+    <a href="#">
+      <img src="/assets/images/franklynxc_logo.png" alt="" class="w-[10rem] sm:w-[15rem]">
+    </a>
+
+    <nav class="fixed top-0 right-0 w-[15rem] bg-background hidden sm:hidden" id="menubar">
+      <button type="button" class="sm:hidden mt-7 ml-52" id="closebtn">
+        <img src="/assets/images/icon-close.svg" alt="">
+      </button>
+      <ul class="flex flex-col gap-y-5 text-primary sm:hidden pt-32 px-10 h-screen">
+        <li><a href="/index.html" class="hover:text-accent">Home</a></li>
+        <li><a href="/about.html" class="hover:text-accent">About Me</a></li>
+        <li><a href="/projects.html" class="hover:text-accent">Projects</a></li>
+        <li><a href="/contact.html" class="hover:text-accent">Contact</a></li>
+        <li><a href="/assets/Resume.pdf" download="./assets/Resume.pdf" class="hover:text-accent">Resume</a></li>
+      </ul>
+    </nav>
+
+    <nav>
+      <ul class="hidden md:flex gap-x-5 text-primary"> 
+        <li><a href="/index.html" class="hover:text-accent">Home</a></li>
+        <li><a href="/about.html" class="hover:text-accent">About Me</a></li>
+        <li><a href="/projects.html" class="hover:text-accent">Projects</a></li>
+        <li><a href="/contact.html" class="hover:text-accent">Contact</a></li>
+        <li><a href="/assets/Resume.pdf" download="./assets/Resume.pdf" class="hover:text-accent">Resume</a></li>
+      </ul>
+    </nav>
+
+    <button type="button" class=" sm:hidden" id="hamburgerbtn">
+      <img src="/assets/images/icon-hamburger.svg" alt="">
+    </button>
+  </header>
+
+  <main class="bg-background">
+    <!-- Hero Section -->
+    <section id="hero" class="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-[#FF6B6B] to-[#FF8C69] text-white text-center p-4">
+      <h1 class="text-4xl font-bold mb-2 font-headings">Hi, I’m Franklin Onyenechere</h1>
+      <h2 class="text-2xl mb-4 font-bodyText">Full-Stack Developer | Frontend & Backend Specialist | Digital Marketer</h2>
+      <div class="flex items-center gap-x-3">
+        <a href="/projects.html" class="btn-primary bg-white text-primary py-2 px-4 rounded-lg shadow hover:bg-gray-200 transition duration-300">View My Work</a>
+        <a href="/contact.html" class="btn-secondary bg-transparent border border-white text-white py-2 px-4 rounded-lg hover:bg-white hover:text-primary transition duration-300">Get in Touch</a>
+      </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section id="introduction" class="py-16 bg-[#FAFAFA] text-center container">
+      <h2 class="text-3xl font-semibold mb-4 font-headings">Bringing Ideas to Life with Code and Creativity</h2>
+      <p class="max-w-xl mx-auto text-primary font-bodyText">
+        I’m a passionate full-stack developer with a foundation in accountancy and additional expertise in digital marketing. Skilled in both frontend and backend technologies, I thrive on building responsive, user-centered web applications that are functional, secure, and visually engaging.
+      </p>
+    </section>
+
+    <!-- Services Overview -->
+    <section id="services" class="py-16 bg-white text-center container">
+      <h2 class="text-3xl font-semibold mb-4 font-headings">What I Do</h2>
+      <p class="mb-8 text-primary font-bodyText">Here’s a quick look at how I can help bring your project to life</p>
+      <div class="flex flex-col md:flex-row justify-center items-center gap-8 mb-8 text-primary">
+        <ul class="bg-background p-4 pb-8 rounded-lg shadow hover:shadow-lg transition duration-300 w-[18rem] flex flex-col gap-y-3">
+          <h3><strong>Frontend Development</strong></h3>
+          <li>Responsive web design</li>
+          <li>UI/UX implementation</li>
+          <li>Cross-browser compatibility</li>
+          <li>Performance optimization</li>
+        </ul>
+        <ul class="bg-background p-4 pb-8 rounded-lg shadow hover:shadow-lg transition duration-300 w-[18rem] flex flex-col gap-y-3">
+          <h3><strong>Backend Development</strong></h3>
+          <li>Database management</li>
+          <li>API development</li>
+          <li>Data security</li>
+          <li>Application deployment</li>
+        </ul>
+        <ul class="bg-background p-4 pb-8 rounded-lg shadow hover:shadow-lg transition duration-300 w-[18rem] flex flex-col gap-y-3">
+          <h3><strong>Digital Marketing</strong></h3>
+          <li>SEO</li>
+          <li>Content marketing</li>
+          <li>Social media strategy</li>
+          <li>Search engine marketing</li>
+        </ul>
+      </div>
+      <a href="#about" class="btn-link bg-[#FF6B6B] text-white py-2 px-4 rounded-lg hover:bg-[#FF5A5A] transition duration-300">Learn More</a>
+    </section>
+
+    <!-- Portfolio Preview -->
+    <section id="portfolio" class="py-16 bg-[#FAFAFA] text-center container">
+      <h2 class="text-3xl font-semibold mb-4 font-headings">Featured Projects</h2>
+      <p class="max-w-xl mx-auto mb-8 text-primary font-bodyText">Explore some of my recent work, showcasing a blend of creativity, functionality, and technical skill.</p>
+      
+			<div class="grid grid-cols-1 sm:grid-cols-2 gap-8 sm:mx-28 lg:grid-cols-2 mb-10">
+        <!-- Project Card  1 -->
+        <div class="card">
+          <div class="image-cover group">
+            <!-- Project Image -->
+            <a href="https://bookmark-landing-page-franklynxchill.netlify.app" target="_blank">
+              <img class="card-img" src="./assets/images/bookmark-landing-page-desktop-preview.jpg" alt="bookmark landing page desktop">
+            </a>
+          </div>
+          <div class="card-detail">
+            <!-- Project Title -->
+            <a href="https://bookmark-landing-page-franklynxchill.netlify.app" target="_blank">
+              <h2 class="text-xl font-semibold text-gray-800  hover:underline">Bookmark landing page</h2>
+            </a>
+            <!-- Skills Used -->
+            <div class="mt-4 flex flex-wrap gap-2">
+              <img src="/assets/images/icons/html5-svgrepo-com.svg" alt="html5" class="w-8">
+              <img src="/assets/images/icons/css3-svgrepo-com.svg" alt="css3" class="w-8">
+              <img src="/assets/images/icons/javascript-svgrepo-com.svg" alt="JavaScript" class="w-8">
+              <img src="/assets/images/icons/tailwind-svgrepo-com.svg" alt="tailwind css" class="w-8">
+            </div>
+            <!-- Action Buttons -->
+            <div class="mt-4 flex  justify-between items-start gap-x-2">
+              <a href="https://www.frontendmentor.io/challenges/bookmark-landing-page-5d0b588a9edda32581d29158" class="btn-main">
+                <i class="fa-solid fa-circle-info btn-i"></i> Challenge info
+              </a>
+              <a href="https://github.com/franklynxchill/bookmark-landing-page" class="btn-main">
+                <i class="fa-brands fa-github btn-i"></i> GitHub Repo
+              </a>
+              <a href="https://bookmark-landing-page-franklynxchill.netlify.app" class="btn-main">
+                <i class="fa-solid fa-arrow-up-right-from-square btn-i"></i> Preview
+              </a>
+            </div>
+          </div>
+        </div>        
+        <!--  Card  2 -->
+
+
+        <!-- Project Card  3 -->
+        <div class="card">
+          <div class="image-cover group">
+            <!-- Project Image -->
+            <a href="https://chat-app-css-illus-franklynxchill.netlify.app/" target="_blank">
+              <img class="card-img" src="./assets/images/chat-app-illustration-desktop-preview.jpg" alt="chat app illustration desktop preview">
+            </a>
+          </div>
+          <div class="card-detail">
+            <!-- Project Title -->
+            <a href="https://chat-app-css-illus-franklynxchill.netlify.app/" target="_blank">
+              <h2 class="text-xl font-semibold text-gray-800 hover:underline">Chat app CSS illustration</h2>
+            </a>
+            <!-- Skills Used -->
+            <div class="mt-4 flex flex-wrap gap-2">
+              <img src="/assets/images/icons/html5-svgrepo-com.svg" alt="html5" class="w-8">
+              <img src="/assets/images/icons/css3-svgrepo-com.svg" alt="css3" class="w-8">
+              <img src="/assets/images/icons/tailwind-svgrepo-com.svg" alt="tailwind css" class="w-8">
+            </div>
+            <!-- Action Buttons -->
+            <div class="mt-4 flex  justify-between items-start gap-x-2">
+              <a href="https://www.frontendmentor.io/challenges/chat-app-css-illustration-O5auMkFqY" class="btn-main">
+                <i class="fa-solid fa-circle-info btn-i"></i> Challenge info
+              </a>
+              <a href="https://github.com/franklynxchill/chat-app-css-illustration" class="btn-main">
+                <i class="fa-brands fa-github btn-i"></i> GitHub Repo
+              </a>
+              <a href="https://chat-app-css-illus-franklynxchill.netlify.app/" class="btn-main">
+                <i class="fa-solid fa-arrow-up-right-from-square btn-i"></i> Preview
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card  4 -->
+        <div class="card">
+          <div class="image-cover group">
+            <!-- Project Image -->
+            <a href="https://sunnyside-landing-page-franklynxchill.netlify.app/" target="_blank">
+              <img class="card-img" src="./assets/images/agency-landing-page-desktop-preview.jpg" alt="agency landing page desktop">
+            </a>
+          </div>
+          <div class="card-detail">
+            <!-- Project Title -->
+            <a href="https://sunnyside-landing-page-franklynxchill.netlify.app/" target="_blank">
+              <h2 class="text-xl font-semibold text-gray-800  hover:underline">Agency landing page</h2>
+            </a>
+            <!-- Skills Used -->
+            <div class="mt-4 flex flex-wrap gap-2">
+              <img src="/assets/images/icons/html5-svgrepo-com.svg" alt="html5" class="w-8">
+              <img src="/assets/images/icons/css3-svgrepo-com.svg" alt="css3" class="w-8">
+              <img src="/assets/images/icons/javascript-svgrepo-com.svg" alt="JavaScript" class="w-8">
+              <img src="/assets/images/icons/scss2-svgrepo-com.svg" alt="scss" class="w-8">
+            </div>
+            <!-- Action Buttons -->
+            <div class="mt-4 flex  justify-between items-start gap-x-2">
+              <a href="https://www.frontendmentor.io/challenges/agency-landing-page-7yVs3B6ef" class="btn-main">
+                <i class="fa-solid fa-circle-info btn-i"></i> Challenge info
+              </a>
+              <a href="https://github.com/franklynxchill/sunnyside-agency-landing-page" class="btn-main">
+                <i class="fa-brands fa-github btn-i"></i> GitHub Repo
+              </a>
+              <a href="https://sunnyside-landing-page-franklynxchill.netlify.app/" class="btn-main">
+                <i class="fa-solid fa-arrow-up-right-from-square btn-i"></i> Preview
+              </a>
+            </div>
+          </div>
+        </div>        
+        <!--  Card  5 -->
+        <div class="card">
+          <div class="image-cover group">
+            <!-- Project Image -->
+            <a href="https://easybank-landing-page-franklynxchill.netlify.app/" target="_blank">
+              <img class="card-img" src="./assets/images/easybank-landing-page-desktop-preview.jpg" alt="easybank-landing desktop preview">
+            </a>
+          </div>
+          <div class="card-detail">
+            <!-- Project Title -->
+            <a href="https://easybank-landing-page-franklynxchill.netlify.app/" target="_blank">
+              <h2 class="text-xl font-semibold text-gray-800 hover:underline">Easybank landing page</h2>
+            </a>
+            <!-- Skills Used -->
+            <div class="mt-4 flex flex-wrap gap-2">
+              <img src="/assets/images/icons/html5-svgrepo-com.svg" alt="html5" class="w-8">
+              <img src="/assets/images/icons/css3-svgrepo-com.svg" alt="css3" class="w-8">
+              <img src="/assets/images/icons/javascript-svgrepo-com.svg" alt="JavaScript" class="w-8">
+              <img src="/assets/images/icons/tailwind-svgrepo-com.svg" alt="tailwind css" class="w-8">
+            </div>
+            <!-- Action Buttons -->
+            <div class="mt-4 flex  justify-between items-start gap-x-2">
+              <a href="https://www.frontendmentor.io/challenges/easybank-landing-page-WaUhkoDN" class="btn-main">
+                <i class="fa-solid fa-circle-info btn-i"></i> Challenge info
+              </a>
+              <a href="https://github.com/franklynxchill/easybank-landing-page" class="btn-main">
+                <i class="fa-brands fa-github btn-i"></i> GitHub Repo
+              </a>
+              <a href="https://easybank-landing-page-franklynxchill.netlify.app/" class="btn-main">
+                <i class="fa-solid fa-arrow-up-right-from-square btn-i"></i> Preview
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Repeat the above card structure to fill out the grid for eight or more projects -->
+      </div>
+      
+      <a href="portfolio.html" class="btn-primary bg-[#FF6B6B] text-white py-2 px-4 rounded-lg hover:bg-[#FF5A5A] transition duration-300 mt-10">View Full Portfolio</a>
+    </section>
+
+    <!-- Testimonials (Optional) -->
+    <!-- <section id="testimonials" class="py-16 bg-white text-center container">
+      <h2 class="text-3xl font-semibold mb-4 font-headings">What Clients Say</h2>
+      <p class="mb-8 text-primary font-bodyText">Here’s what my clients and collaborators have to say about working with me.</p>
+      
+      
+      <div class="max-w-2xl mx-auto space-y-4">
+        <div class="testimonial bg-background p-4 rounded-lg shadow">
+          <p class="italic">"Franklin did an incredible job on our project. His attention to detail and commitment were top-notch."</p>
+          <h4 class="font-semibold">- Client Name, Job Title</h4>
+        </div>
+        <div class="testimonial bg-background p-4 rounded-lg shadow">
+          <p class="italic">"A true professional who delivered quality work on time. I highly recommend working with Franklin!"</p>
+          <h4 class="font-semibold">- Client Name, Job Title</h4>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Call to Action -->
+    <section id="cta" class="py-16 bg-gradient-to-r from-[#FF6B6B] to-[#FF8C69] text-white text-center">
+      <h2 class="text-3xl font-semibold mb-4 font-headings">Ready to Work Together?</h2>
+      <p class="mb-8 font-bodyText">If you have a project in mind or just want to say hello, don’t hesitate to reach out. I’d love to hear from you!</p>
+      <a href="#contact" class="btn-primary bg-white text-primary py-2 px-4 rounded-lg shadow hover:bg-gray-200 transition duration-300">Contact Me</a>
+    </section>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>

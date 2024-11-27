@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./dist/style.css">
+  <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon">
+  <title>About Franklin | Full-Stack Developer & Designer</title>
+</head>
+<body>
+  <header class="container flex justify-between items-center font-headings font-bold py-3">
+    <a href="#">
+      <img src="/assets/images/franklynxc_logo.png" alt="" class="w-[10rem] sm:w-[15rem]">
+    </a>
+
+    <nav class="fixed top-0 right-0 w-[15rem] bg-background hidden sm:hidden" id="menubar">
+      <button type="button" class="sm:hidden mt-7 ml-52" id="closebtn">
+        <img src="/assets/images/icon-close.svg" alt="">
+      </button>
+      <ul class="flex flex-col gap-y-5 text-primary sm:hidden pt-32 px-10 h-screen">
+        <li><a href="/index.html" class="hover:text-accent">Home</a></li>
+        <li><a href="/about.html" class="hover:text-accent">About Me</a></li>
+        <li><a href="/projects.html" class="hover:text-accent">Projects</a></li>
+        <li><a href="/contact.html" class="hover:text-accent">Contact</a></li>
+        <li><a href="/assets/Resume.pdf" download="./assets/Resume.pdf" class="hover:text-accent">Resume</a></li>
+      </ul>
+    </nav>
+
+    <nav>
+      <ul class="hidden md:flex gap-x-5 text-primary"> 
+        <li><a href="/index.html" class="hover:text-accent">Home</a></li>
+        <li><a href="/about.html" class="hover:text-accent">About Me</a></li>
+        <li><a href="/projects.html" class="hover:text-accent">Projects</a></li>
+        <li><a href="/contact.html" class="hover:text-accent">Contact</a></li>
+        <li><a href="/assets/Resume.pdf" download="./assets/Resume.pdf" class="hover:text-accent">Resume</a></li>
+      </ul>
+    </nav>
+
+    <button type="button" class=" sm:hidden" id="hamburgerbtn">
+      <img src="/assets/images/icon-hamburger.svg" alt="">
+    </button>
+  </header>
+  
+  <main class="bg-background">
+    <section id="about" class="py-16 text-center container">
+      <h1 class="text-4xl font-bold mb-4 font-headings text-[#2E2E2E]">Hello, I’m Franklin Onyenechere!</h1>
+      <h3 class="text-2xl mb-4 font-bodyText text-[#FF6B6B]">Full-Stack Developer | Tech Enthusiast | Digital Marketer</h3>
+      
+      <p class="max-w-2xl mx-auto mb-6 text-[#2E2E2E] font-bodyText">
+        A dedicated full-stack developer with a passion for crafting innovative digital solutions. My journey began as a self-taught frontend developer, where I honed my skills in HTML, CSS, and JavaScript through rigorous practice on platforms like Frontend Mentor. I've successfully tackled numerous pixel-perfect design conversions and interactive UI challenges.
+      </p>
+      <p class="max-w-2xl mx-auto mb-6 text-[#2E2E2E] font-bodyText">
+        As my interest in full-stack development grew, I delved into the backend, exploring Node.js, Express.js, PHP, MySQL, and MongoDB. While I'm still actively learning and gaining experience, I'm eager to apply my knowledge to real-world projects, particularly in the fintech industry.
+      </p>
+      <p class="max-w-2xl mx-auto mb-6 text-[#2E2E2E] font-bodyText">
+        I'm committed to continuous learning and staying up-to-date with the latest technologies. My goal is to become a well-rounded full-stack developer, capable of building robust and scalable applications. I'm excited to collaborate with talented teams and contribute to impactful projects.
+      </p>
+
+    </section>
+
+    <section class="bg-white py-16 text-center container">
+      <h2 class="text-3xl font-semibold mb-4 font-headings text-[#2E2E2E]">What I Do</h2>
+      <p class="max-w-2xl mx-auto mb-6 text-[#2E2E2E] font-bodyText">
+        I create responsive, user-centered web applications that blend functionality, design, and performance. With expertise in both development and digital marketing, I bring an added focus on SEO and user engagement, making my projects not only robust and efficient but also strategically optimized. Here’s a snapshot of my skills
+      </p>
+      
+      <div class="flex flex-col md:flex-row justify-center items-center gap-8 mb-8 text-primary">
+        <ul class="bg-background p-4 pb-8 rounded-lg shadow hover:shadow-lg transition duration-300 w-[18rem] flex flex-col gap-y-3">
+          <h3><strong>Frontend Development</strong></h3>
+          <li>Responsive web design</li>
+          <li>UI/UX implementation</li>
+          <li>Cross-browser compatibility</li>
+          <li>Performance optimization</li>
+        </ul>
+        <ul class="bg-background p-4 pb-8 rounded-lg shadow hover:shadow-lg transition duration-300 w-[18rem] flex flex-col gap-y-3">
+          <h3><strong>Backend Development</strong></h3>
+          <li>Database management</li>
+          <li>API development</li>
+          <li>Data security</li>
+          <li>Application deployment</li>
+        </ul>
+        <ul class="bg-background p-4 pb-8 rounded-lg shadow hover:shadow-lg transition duration-300 w-[18rem] flex flex-col gap-y-3">
+          <h3><strong>Digital Marketing</strong></h3>
+          <li>SEO</li>
+          <li>Content marketing</li>
+          <li>Social media strategy</li>
+          <li>Search engine marketing</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="py-16 text-center container">
+      <h2 class="text-3xl font-semibold mb-4 font-headings text-[#2E2E2E]">Tech Stack</h2>
+      <p class="max-w-2xl mx-auto mb-6 text-[#2E2E2E] font-bodyText">
+        I’m experienced with a variety of tools, libraries, and languages that help me turn ideas into working applications.
+      </p>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div class="bg-white shadow-md rounded-lg p-6 flex flex-col items-start">
+          <h3>Languages</h3>
+          <div class="flex items-center mt-2 gap-x-3">
+            <img src="./assets/images/icons/html5-svgrepo-com.svg" alt="HTML5" class="skill-icon">
+            <img src="./assets/images/icons/css3-svgrepo-com.svg" alt="CSS3" class="skill-icon">
+            <img src="./assets/images/icons/javascript-svgrepo-com.svg" alt="JavaScript" class="skill-icon">
+            <img src="./assets/images/icons/scss2-svgrepo-com.svg" alt="SCSS" class="skill-icon">
+            <img src="./assets/images/icons/php-svgrepo-com.svg" alt="PHP" class="skill-icon">
+          </div>
+        </div>
+        
+        <div class="bg-white shadow-md rounded-lg p-6 flex flex-col items-start">
+          <h3>Technologies/Libraries</h3>
+          <div class="flex items-center gap-x-3">
+            <img src="./assets/images/icons/tailwind-svgrepo-com.svg" alt="Tailwind CSS" class="skill-icon">
+            <img src="./assets/images/icons/bootstrap-4-logo-svgrepo-com.svg" alt="Tailwind CSS" class="skill-icon">
+            <img src="./assets/images/icons/nodejs-svgrepo-com.svg" alt="Node js" class="w-16 h-12 hover:shadow-lg transition duration-300 cursor-pointer bg-transparent">
+            <img src="./assets/images/icons/express-svgrepo-com.svg" alt="Express js" class="skill-icon">
+          </div>
+        </div>
+
+        <div class="bg-white shadow-md rounded-lg p-6 flex flex-col items-start">
+          <h3>Databases</h3>
+          <div class="flex items-center gap-x-3">
+            <img src="./assets/images/icons/mysql-logo-svgrepo-com.svg" alt="MySQL" class="w-20 h-14 hover:shadow-lg transition duration-300 cursor-pointer bg-transparent">
+            <img src="./assets/images/icons/mongodb-svgrepo-com.svg" alt="mongo DB" class="w-20 h-14 hover:shadow-lg transition duration-300 cursor-pointer bg-transparent">
+          </div>
+        </div>
+      </div>
+      <div class="max-w-xs mx-auto mt-5 ">
+        <div class="bg-white shadow-md rounded-lg p-6 flex flex-col items-start h-48">
+          <h3>Tools & Platforms</h3>
+          <div class="flex items-center flex-wrap gap-y-5 gap-x-3 mt-2">
+            <img src="./assets/images/icons/vs-code-svgrepo-com.svg" alt="vs-code" class="skill-icon">
+            <img src="./assets/images/icons/git-svgrepo-com.svg" alt="git" class="skill-icon">
+            <img src="./assets/images/icons/wordpress-svgrepo-com.svg" alt="wordpress" class="skill-icon">
+            <img src="./assets/images/icons/figma-svgrepo-com.svg" alt="mongo DB" class="skill-icon">
+            <img src="./assets/images/icons/github-142-svgrepo-com.svg" alt="github" class="skill-icon">
+            <img src="./assets/images/icons/netlify-svgrepo-com.svg" alt="netlify" class="skill-icon">
+            <img src="./assets/images/icons/aws-svgrepo-com.svg" alt="aws" class="skill-icon">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-center py-16 bg-white container">
+      <h2 class="text-3xl font-semibold mb-4 font-headings text-[#2E2E2E]">My Approach</h2>
+      <p class="max-w-2xl mx-auto mb-6 text-[#2E2E2E] font-bodyText">
+        I believe in building solutions that not only meet immediate needs but are also scalable and future-ready. 
+        My approach combines strategic thinking, careful planning, and a drive for innovation. I work collaboratively, 
+        value client feedback, and aim for excellence in every project.
+      </p>
+      
+      <h2 class="text-3xl font-semibold mb-4 font-headings text-[#2E2E2E]">Beyond the Code</h2>
+      <p class="max-w-2xl mx-auto mb-6 text-[#2E2E2E] font-bodyText">
+        Outside of coding, you’ll often find me exploring new technology trends, reading, or watching documentaries. 
+        I’m always eager to learn, grow, and share knowledge within the tech community.
+      </p>
+    </section>
+    <section class="py-16 bg-gradient-to-r from-[#FF6B6B] to-[#FF8C69] text-white text-center">
+      <h2 class="text-3xl font-semibold mb-4 font-headings">Let’s Connect!</h2>
+      <p class="max-w-2xl mx-auto mb-6 font-bodyText">
+        Let’s bring your vision to life! If you’re looking for a developer who’s as committed to your project as you are, 
+        <a href="#contact" class="text-primary font-bold hover:underline">let’s connect</a> and start building.
+      </p>
+    </section>
+  </main>
+  <script src="https://kit.fontawesome.com/12acbe389d.js" crossorigin="anonymous"></script>
+  <script src="/app.js"></script>
+</body>
+</html>

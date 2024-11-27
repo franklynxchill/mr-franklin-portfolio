@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../assets/fonts/OpenSans-Bold.woff2') format(woff2),
+       url('../assets/fonts/OpenSans-Bold.woff') format(woff);
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../assets/fonts/OpenSans-Regular.woff2') format(woff2),
+       url('../assets/fonts/OpenSans-Regular.woff') format(woff);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../assets/fonts/Montserrat-Bold.woff2') format(woff2),
+       url('../assets/fonts/Montserrat-Bold.woff') format(woff);
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../assets/fonts/Montserrat-Regular.woff2') format(woff2),
+       url('../assets/fonts/Montserrat-Regular.woff') format(woff);
+  font-weight: normal;
+  font-style: normal;
+}
+
+.skill-icon {
+  @apply w-10 h-10 hover:shadow-lg transition duration-300 cursor-pointer bg-transparent;
+}
+
+.card{
+  @apply rounded-lg shadow-md h-[27rem] w-[22rem]
+  /* @apply rounded-lg shadow-md overflow-hidden; */
+}
+
+.image-cover {
+  @apply overflow-hidden rounded-t-lg
+}
+
+.card-img {
+  @apply w-full h-[17rem] object-cover transition-transform duration-300 transform group-hover:scale-110;
+}
+
+
+.card-detail {
+  @apply pt-[1.5rem] pb-8 px-5;
+}
+
+.btn-main {
+  @apply flex sm:items-center gap-[0.35rem] text-[.9rem];
+}
+
+.btn-i {
+  @apply transition-transform duration-300;
+}
+
+.btn-main:hover .btn-i {
+  transform: rotate(15deg); /* Slight rotation */
+}
